@@ -10,37 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/babspham/nailsalon/refs/heads/main/AdobeStock_504977645.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .nail-polish {
-            background: linear-gradient(45deg, #f3e7e9, #e3eeff);
-        }
-        .transition-all {
-            transition: all 0.3s ease;
-        }
-        .testimonial-card {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-        }
-        /* Optional: make the .nail-polish section a bit darker in dark mode */
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/babspham/nailsalon/refs/heads/main/AdobeStock_504977645.jpeg'); background-size: cover; background-position: center; }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);}
+        .nail-polish { background: linear-gradient(45deg, #f3e7e9, #e3eeff);}
+        .transition-all { transition: all 0.3s ease; }
+        .testimonial-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(10px);}
         @media (prefers-color-scheme: dark) {
-            .nail-polish {
-                background: linear-gradient(45deg, #23232b, #2c3240);
-            }
-            .testimonial-card {
-                background: rgba(31, 41, 55, 0.9);
-            }
+            .nail-polish { background: linear-gradient(45deg,#23232b,#2c3240);}
+            .testimonial-card { background: rgba(31,41,55,0.9);}
         }
     </style>
 </head>
@@ -125,9 +103,8 @@
                 <h2 class="heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-4 dark:text-white">Our Services</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto text-lg dark:text-gray-200">Indulge in our curated selection of nail treatments designed to pamper and beautify.</p>
             </div>
-            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
+                <!-- Service Cards (copy for each service, all updated for dark mode) -->
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-8 transition-all dark:bg-gray-800 dark:text-white">
                     <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 dark:bg-pink-200">
                         <i class="fas fa-hand-sparkles text-pink-600 text-2xl"></i>
@@ -138,7 +115,6 @@
                         <span class="text-pink-600 font-bold text-xl">$25+</span>
                     </div>
                 </div>
-                <!-- Service 2 -->
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-8 transition-all dark:bg-gray-800 dark:text-white">
                     <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 dark:bg-pink-200">
                         <i class="fas fa-wind text-pink-600 text-2xl"></i>
@@ -149,7 +125,6 @@
                         <span class="text-pink-600 font-bold text-xl">$35+</span>
                     </div>
                 </div>
-                <!-- Service 3 -->
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-8 transition-all dark:bg-gray-800 dark:text-white">
                     <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 dark:bg-pink-200">
                         <i class="fas fa-spa text-pink-600 text-2xl"></i>
@@ -160,7 +135,6 @@
                         <span class="text-pink-600 font-bold text-xl">$10+</span>
                     </div>
                 </div>
-                <!-- Service 4 -->
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-8 transition-all dark:bg-gray-800 dark:text-white">
                     <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 dark:bg-pink-200">
                         <i class="fas fa-paintbrush text-pink-600 text-2xl"></i>
@@ -171,7 +145,6 @@
                         <span class="text-pink-600 font-bold text-xl">$50+</span>
                     </div>
                 </div>
-                <!-- Service 5 -->
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-8 transition-all dark:bg-gray-800 dark:text-white">
                     <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 dark:bg-pink-200">
                         <i class="fas fa-gem text-pink-600 text-2xl"></i>
@@ -182,7 +155,6 @@
                         <span class="text-pink-600 font-bold text-xl">$70+</span>
                     </div>
                 </div>
-                <!-- Service 6 -->
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md p-8 transition-all dark:bg-gray-800 dark:text-white">
                     <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 dark:bg-pink-200">
                         <i class="fas fa-child text-pink-600 text-2xl"></i>
@@ -211,13 +183,31 @@
                 <h2 class="heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-4 dark:text-white">Our Gallery</h2>
                 <p class="text-gray-700 max-w-2xl mx-auto text-lg dark:text-gray-200">Browse our collection of stunning nail designs and transformations.</p>
             </div>
-            
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
                     <img src="https://devtest21.neocities.org/nail01.png" alt="Nail design 1" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
                 </div>
-                <!-- ...repeat for other images... -->
-                <!-- For brevity, you can just copy the pattern above -->
+                <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
+                    <img src="https://devtest21.neocities.org/nail02.png" alt="Nail design 2" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
+                    <img src="https://devtest21.neocities.org/nail03.png" alt="Nail design 3" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
+                    <img src="https://devtest21.neocities.org/nail04.png" alt="Nail design 4" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
+                    <img src="https://devtest21.neocities.org/nail05.png" alt="Nail design 5" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
+                    <img src="https://devtest21.neocities.org/nail06.png" alt="Nail design 6" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
+                    <img src="https://devtest21.neocities.org/nail07.png" alt="Nail design 7" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden aspect-square bg-white dark:bg-gray-800">
+                    <img src="https://devtest21.neocities.org/nail08.png" alt="Nail design 8" class="w-full h-full object-cover hover:scale-105 transition-all duration-500">
+                </div>
             </div>
         </div>
     </section>
@@ -229,12 +219,67 @@
                 <h2 class="heading-font text-4xl md:text-5xl font-bold text-gray-900 mb-4 dark:text-white">Client Testimonials</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto text-lg dark:text-gray-200">Hear what our clients say about their Westborough Nails & Spa experience.</p>
             </div>
-            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="testimonial-card rounded-xl p-8 shadow-md dark:bg-gray-800 dark:text-white">
-                    <!-- Testimonial 1... -->
+                    <div class="flex items-center mb-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex items-center justify-center">
+                                <i class="fas fa-user text-pink-600 text-4xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold dark:text-white">Christine B.</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-200">"Excellent experience at this salon! The staff was polite, the experience was relaxing, it was very clean and enjoyable. Prices are very reasonable!"</p>
                 </div>
-                <!-- ...repeat for other testimonials... -->
+                <div class="testimonial-card rounded-xl p-8 shadow-md dark:bg-gray-800 dark:text-white">
+                    <div class="flex items-center mb-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex items-center justify-center">
+                                <i class="fas fa-user text-pink-600 text-4xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold dark:text-white">Carolyn G.</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-200">"Great place. Very clean and people are great!"</p>
+                </div>
+                <div class="testimonial-card rounded-xl p-8 shadow-md dark:bg-gray-800 dark:text-white">
+                    <div class="flex items-center mb-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex items-center justify-center">
+                                <i class="fas fa-user text-pink-600 text-4xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold dark:text-white">Julie G.</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-200">"Very friendly staff.  Service is fantastic & very reasonably priced.  Definitely will be returning."</p>
+                </div>
             </div>
         </div>
     </section>
@@ -277,7 +322,6 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Form Section -->
                 <div class="w-full max-w-xl mx-auto p-12 text-black dark:text-white dark:bg-gray-900 rounded-xl">
                     <form action="https://formsubmit.co/cutexlilgurl@gmail.com" method="POST" id="bookingForm" class="space-y-6">
                         <div>
@@ -355,12 +399,12 @@
         flatpickr("#datetime", {
             enableTime: true,
             noCalendar: false,
-            dateFormat: "Y-m-d h:i K", // "h:i K" = 12-hour with AM/PM
+            dateFormat: "Y-m-d h:i K",
             time_24hr: false
         });
     </script>
     <script>
-        // Simple JavaScript for mobile menu toggle (would be expanded in a real implementation)
+        // Mobile menu with dark mode support
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuButton = document.querySelector('.md\\:hidden button');
             const mobileMenu = document.createElement('div');
