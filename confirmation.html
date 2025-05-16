@@ -9,15 +9,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
         body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/babspham/nailsalon/refs/heads/main/AdobeStock_504977645.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/babspham/nailsalon/refs/heads/main/AdobeStock_504977645.jpeg'); background-size: cover; background-position: center; }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);}
+        .nail-polish { background: linear-gradient(45deg, #f3e7e9, #e3eeff);}
+        .transition-all { transition: all 0.3s ease; }
+        .testimonial-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(10px);}
         @media (prefers-color-scheme: dark) {
-            .hero {
-                background: linear-gradient(rgba(15,15,30,0.85), rgba(15,15,30,0.85)), url('https://raw.githubusercontent.com/babspham/nailsalon/refs/heads/main/AdobeStock_504977645.jpeg');
-            }
+            .nail-polish { background: linear-gradient(45deg,#23232b,#2c3240);}
+            .testimonial-card { background: rgba(31,41,55,0.9);}
         }
     </style>
 </head>
