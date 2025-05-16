@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
             background-size: cover;
             background-position: center;
         }
+        @media (prefers-color-scheme: dark) {
+            .hero {
+                background: linear-gradient(rgba(15,15,30,0.85), rgba(15,15,30,0.85)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
+            }
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm fixed w-full z-50">
+    <nav class="bg-white shadow-sm fixed w-full z-50 dark:bg-gray-950 dark:shadow-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <a href="https://babspham.github.io/nailsalon/" class="flex-shrink-0 flex items-center">
                     <span class="text-2xl heading-font text-pink-600 font-bold">Westborough</span>
-                    <span class="text-2xl heading-font text-gray-800 font-bold">Nails & Spa</span>
+                    <span class="text-2xl heading-font text-gray-800 font-bold dark:text-gray-100">Nails & Spa</span>
                 </a>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-8">
-                        <a href="#home" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all">Home</a>
-                        <a href="#about" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all">About</a>
-                        <a href="#services" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all">Services</a>
-                        <a href="#gallery" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all">Gallery</a>
-                        <a href="#contact" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all">Contact</a>
-                        <a href="#book" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all">Book Now</a>
+                        <a href="#home" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all dark:text-gray-200 dark:hover:text-pink-400">Home</a>
+                        <a href="#about" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all dark:text-gray-200 dark:hover:text-pink-400">About</a>
+                        <a href="#services" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all dark:text-gray-200 dark:hover:text-pink-400">Services</a>
+                        <a href="#gallery" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all dark:text-gray-200 dark:hover:text-pink-400">Gallery</a>
+                        <a href="#contact" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-all dark:text-gray-200 dark:hover:text-pink-400">Contact</a>
+                        <a href="#book" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all dark:bg-pink-700 dark:hover:bg-pink-800">Book Now</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-gray-800 focus:outline-none">
+                    <button class="text-gray-800 focus:outline-none dark:text-gray-200">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -49,56 +51,63 @@
 
     <!-- Thank You Section -->
     <section class="hero min-h-screen flex items-center justify-center text-white pt-20">
-        <div class="max-w-lg mx-auto bg-white bg-opacity-90 rounded-xl shadow-xl text-center p-12">
+        <div class="max-w-lg mx-auto bg-white bg-opacity-90 rounded-xl shadow-xl text-center p-12 dark:bg-gray-900 dark:bg-opacity-90 dark:text-white">
             <h1 class="heading-font text-4xl md:text-5xl font-bold mb-6 text-pink-600">Thank You!</h1>
-            <p class="text-lg text-gray-800 mb-8">Your submission has been received.<br>We appreciate your interest and will get back to you soon.</p>
-            <a href="https://babspham.github.io/nailsalon/" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all">
+            <p class="text-lg text-gray-800 mb-8 dark:text-gray-200">
+                Your submission has been received.<br>
+                We appreciate your interest and will get back to you soon.
+            </p>
+            <a href="https://babspham.github.io/nailsalon/"
+               class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all dark:bg-pink-700 dark:hover:bg-pink-800">
                 &larr; Back to Home
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-gray-800 text-white py-12 dark:bg-gray-950 dark:text-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="heading-font text-xl font-bold mb-4">Westborough Nails & Spa</h3>
-                    <p class="text-gray-400 mb-4">Westborough's premier nail salon offering affordable nail services in a sophisticated, hygienic environment.</p>
+                    <h3 class="heading-font text-xl font-bold mb-4 dark:text-white">Westborough Nails & Spa</h3>
+                    <p class="text-gray-400 mb-4 dark:text-gray-300">Westborough's premier nail salon offering affordable nail services in a sophisticated, hygienic environment.</p>
                     <div class="flex space-x-4">
-                        <a href="https://maps.app.goo.gl/jCjHnEQSaQriFxfe6" target="_blank" class="text-gray-400 hover:text-pink-500 transition-all"><i class="fab fa-google text-xl"></i></a>
+                        <a href="https://maps.app.goo.gl/jCjHnEQSaQriFxfe6" target="_blank"
+                           class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">
+                            <i class="fab fa-google text-xl"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="md:col-start-2 md:col-span-2 md:ml-16">
-                    <h3 class="heading-font text-xl font-bold mb-4">Quick Links</h3>
+                    <h3 class="heading-font text-xl font-bold mb-4 dark:text-white">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-pink-500 transition-all">Home</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-pink-500 transition-all">Services</a></li>
-                        <li><a href="#gallery" class="text-gray-400 hover:text-pink-500 transition-all">Gallery</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-pink-500 transition-all">About Us</a></li>
-                        <li><a href="#book" class="text-gray-400 hover:text-pink-500 transition-all">Book Now</a></li>
+                        <li><a href="#home" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Gallery</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">About Us</a></li>
+                        <li><a href="#book" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Book Now</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 dark:border-gray-700 dark:text-gray-400">
                 <p>&copy; 2025 Westborough Nails & Spa. All rights reserved.</p>
             </div>
         </div>
     </footer>
     <script>
-        // Simple JavaScript for mobile menu toggle (from your main page)
+        // Mobile menu toggle with dark support
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuButton = document.querySelector('.md\\:hidden button');
             const mobileMenu = document.createElement('div');
-            mobileMenu.className = 'hidden fixed inset-0 bg-white z-40 pt-20 px-4';
+            mobileMenu.className = 'hidden fixed inset-0 bg-white z-40 pt-20 px-4 dark:bg-gray-950';
             mobileMenu.innerHTML = `
                 <div class="flex flex-col space-y-4 py-8">
-                    <a href="#home" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium">Home</a>
-                    <a href="#services" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium">Services</a>
-                    <a href="#gallery" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium">Gallery</a>
-                    <a href="#about" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium">About</a>
-                    <a href="#contact" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium">Contact</a>
-                    <a href="#book" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full text-lg font-medium text-center mt-4">Book Now</a>
+                    <a href="#home" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Home</a>
+                    <a href="#services" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Services</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Gallery</a>
+                    <a href="#about" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">About</a>
+                    <a href="#contact" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Contact</a>
+                    <a href="#book" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full text-lg font-medium text-center mt-4 dark:bg-pink-700 dark:hover:bg-pink-800">Book Now</a>
                 </div>
             `;
             document.body.appendChild(mobileMenu);
