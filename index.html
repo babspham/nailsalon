@@ -244,3 +244,166 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                 <div class="mb-12 lg:mb-0">
+                    <h2 class="heading-font text-4xl md:text-5xl font-bold mb-6">Book Your Appointment</h2>
+                    <p class="text-gray-300 mb-8 text-lg">Ready to experience the Westborough Nails & Spa difference? Schedule your appointment by giving us a call today.</p>
+                    <div class="mb-8">
+                        <h3 class="heading-font text-2xl font-bold mb-4">Salon Hours</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between max-w-xs">
+                                <span class="text-gray-300">Sunday</span>
+                                <span class="font-medium">10:00 AM - 4:00 PM</span>
+                            </li>
+                            <li class="flex justify-between max-w-xs">
+                                <span class="text-gray-300">Monday</span>
+                                <span class="font-medium">Closed</span>
+                            </li>
+                            <li class="flex justify-between max-w-xs">
+                                <span class="text-gray-300">Tuesday - Saturday</span>
+                                <span class="font-medium">9:00 AM - 6:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="heading-font text-2xl font-bold mb-4">Contact Info</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-pink-500 mr-4 text-xl"></i>
+                                <span>  276 Turnpike Rd, Westborough, MA 01581</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-pink-500 mr-4 text-xl"></i>
+                                <span>(508) 366 - 2580</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Form Section -->
+                <div class="w-full max-w-xl mx-auto p-12 text-black dark:text-white dark:bg-gray-900 rounded-xl">
+                    <form action="https://formsubmit.co/cutexlilgurl@gmail.com" method="POST" id="bookingForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-white font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-white" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-white font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-white" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-white font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" pattern="\d{10}" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-white" required>
+                        </div>
+                        <div>
+                            <label for="service" class="block text-white font-medium mb-2">Service</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-white" required>
+                                <option value="">Select a service</option>
+                                <option value="gel-manicure">Gel Manicure ($38)</option>
+                                <option value="acrylic-full-set">Acrylic Full Set ($50)</option>
+                                <option value="express-pedicure">Express Pedicure ($35)</option>
+                                <option value="deluxe-pedicure">Deluxe Pedicure ($50)</option>
+                                <option value="waxing">Waxing ($10+)</option>
+                                <option value="kids-services">Kids Services ($15+)</option>
+                                <option value="other">Other (Please Specify in Comments)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="datetime" class="block text-white font-medium mb-2">Preferred Date & Time</label>
+                            <input type="datetime-local" id="datetime" name="datetime" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-white" required>
+                        </div>
+                        <div>
+                            <label for="notes" class="block text-white font-medium mb-2">Special Requests</label>
+                            <textarea id="notes" name="notes" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-white"></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://babspham.github.io/nailsalon/confirmation.html">
+                        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300 dark:bg-pink-700 dark:hover:bg-pink-800">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12 dark:bg-gray-950 dark:text-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="heading-font text-xl font-bold mb-4 dark:text-white">Westborough Nails & Spa</h3>
+                    <p class="text-gray-400 mb-4 dark:text-gray-300">Westborough's premier nail salon offering affordable nail services in a sophisticated, hygienic environment.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://maps.app.goo.gl/jCjHnEQSaQriFxfe6" target="_blank" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400"><i class="fab fa-google text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="md:col-start-2 md:col-span-2 md:ml-16">
+                    <h3 class="heading-font text-xl font-bold mb-4 dark:text-white">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Gallery</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">About Us</a></li>
+                        <li><a href="#book" class="text-gray-400 hover:text-pink-500 transition-all dark:hover:text-pink-400">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 dark:border-gray-700 dark:text-gray-400">
+                <p>&copy; 2025 Westborough Nails & Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        flatpickr("#datetime", {
+            enableTime: true,
+            noCalendar: false,
+            dateFormat: "Y-m-d h:i K", // "h:i K" = 12-hour with AM/PM
+            time_24hr: false
+        });
+    </script>
+    <script>
+        // Simple JavaScript for mobile menu toggle (would be expanded in a real implementation)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden fixed inset-0 bg-white z-40 pt-20 px-4 dark:bg-gray-950';
+            mobileMenu.innerHTML = `
+                <div class="flex flex-col space-y-4 py-8">
+                    <a href="#home" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Home</a>
+                    <a href="#services" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Services</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Gallery</a>
+                    <a href="#about" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">About</a>
+                    <a href="#contact" class="text-gray-800 hover:text-pink-600 px-3 py-2 text-lg font-medium dark:text-gray-200 dark:hover:text-pink-400">Contact</a>
+                    <a href="#book" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full text-lg font-medium text-center mt-4 dark:bg-pink-700 dark:hover:bg-pink-800">Book Now</a>
+                </div>
+            `;
+            document.body.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close menu when clicking on a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Smooth scrolling for all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
